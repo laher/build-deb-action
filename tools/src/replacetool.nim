@@ -62,4 +62,4 @@ let
   depends = params.depends
   desc = params.desc.formatDescription
 
-fixFile(controlFile, package=package, maintainer=maintainer, version=version, depends=depends, desc=desc)
+fixFile(controlFile, package=package, maintainer=maintainer, version=version, arch=arch, depends=depends, desc=desc)
