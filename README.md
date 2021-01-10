@@ -30,6 +30,9 @@ inputs:
   arch:
     description: 'Package architecture.'
     default: 'amd64'
+  depends:
+    description: 'Package dependencies.'
+    default: ''
   desc:
     description: 'Package description.'
     default: ''
@@ -65,6 +68,7 @@ jobs:
           maintainer: your_name
           version: ${{ github.ref }} # refs/tags/v*.*.*
           arch: 'amd64'
+          depends: fish
           desc: 'this is sample package.'
 ```
 

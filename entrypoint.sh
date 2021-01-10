@@ -10,6 +10,7 @@ INPUT_VERSION="$(echo "$INPUT_VERSION" | sed -E "s,^refs/tags/,,")"
   --version:"$INPUT_VERSION" \
   --arch:"$INPUT_ARCH" \
   --maintainer:"$INPUT_MAINTAINER" \
+  --depends:"$INPUT_DEPENDS" \
   --description:"$INPUT_DESC"
 
 cp -r /template/DEBIAN "$INPUT_PACKAGE_ROOT/"
